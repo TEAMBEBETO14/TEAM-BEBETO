@@ -388,10 +388,20 @@ height:250px;
 <img id="mimg">
 <h3 id="mname"></h3>
 <p id="mprice"></p>
+<label>اللون</label>
+<select id="color">
 <option>أبيض</option>
 <option>أحمر</option>
 <option>أزرق</option>
-<label>المقاس</label><select id="size"><option>S</option><option>M</option><option>L</option><option>XL</option></select><br><br>
+</select>
+
+<label>المقاس</label>
+<select id="size">
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
 <label>الكمية</label><input id="qty" type="number" value="1" min="1"><br><br>
 <div class="actions">
 <button onclick="addCart()">🛒 إضافة للسلة</button>
@@ -454,8 +464,6 @@ img:"img/s4.png"
 }
 ];
 
-	
-];
 let current=0,cart=[];
 function renderProducts(list){
 
